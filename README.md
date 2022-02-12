@@ -1,4 +1,4 @@
-Wifi Control is a eassy way to 
+•Wifi Control beta 0.2 is a eassy way to 
 
 •Monitor mode
 
