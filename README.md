@@ -4,13 +4,11 @@ Wifi Control is a eassy way to
 
 •Managed mode
 
-•Scan All The AP
+•Mac channger   
 
-•Handshake    
+•Handshake                           
 
-•Mac channger                             
-
-to install the tool 
+•to install the tool 
 
 •git clone https://github.com/moemenkali/Wifi-Control.git
 
