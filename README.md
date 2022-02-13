@@ -12,22 +12,17 @@
 
 ```
 •git clone https://github.com/moemenkali/Wifi-Control.git
-
 ```
 ```
 •cd Wifi-Control
-
 ```
 ```
 •chmod +x wifi
-
 ```
 ```
 •./wifi
-
 ```
 ```
 •and enjoy!
-
 ```
 
