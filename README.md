@@ -6,23 +6,28 @@
 
 •Mac channger   
 
-•Handshake                           
+•Handshake   
 
 •to install the tool 
 
 ```
 •git clone https://github.com/moemenkali/Wifi-Control.git
+
 ```
 ```
 •cd Wifi-Control
+
 ```
 ```
 •chmod +x wifi
+
 ```
 ```
 •./wifi
+
 ```
 ```
 •and enjoy!
+
 ```
 
