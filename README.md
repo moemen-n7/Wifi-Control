@@ -11,16 +11,16 @@
 •to install the tool 
 
 ```
-•git clone https://github.com/moemenkali/Wifi-Control.git
+git clone https://github.com/moemenkali/Wifi-Control.git
 ```
 ```
-•cd Wifi-Control
+cd Wifi-Control
 ```
 ```
-•chmod +x wifi
+chmod +x wifi
 ```
 ```
-•./wifi
+./wifi
 ```
 •and enjoy!
 
