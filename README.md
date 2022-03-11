@@ -1,5 +1,5 @@
 # Wifi Control beta 0.2 is a eassy way to 
-
+![image](https://user-images.githubusercontent.com/89262048/157912013-5e45b00e-ddae-470f-82bb-375c49e86a15.png)
 •Monitor mode
 
 •Managed mode
@@ -9,8 +9,6 @@
 •Handshake   
 
 # Installation 
-![image](https://user-images.githubusercontent.com/89262048/157911674-afdbb76c-6f80-4a9b-9952-542e15168529.png)
-
 ```
 git clone https://github.com/moemenkali/Wifi-Control.git
 ```
