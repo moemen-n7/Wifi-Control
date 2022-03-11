@@ -22,5 +22,4 @@ chmod +x wifi
 ```
 ./wifi
 ```
-•and enjoy!
 
