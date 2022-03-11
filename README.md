@@ -26,5 +26,4 @@ chmod +x wifi
 
 ### About 
 
-![image](https://user-images.githubusercontent.com/89262048/157913581-73e0984f-55cc-42a0-affd-09e6619e33b6.png)
-
+![image](https://user-images.githubusercontent.com/89262048/157913708-5a57159c-eebb-4b71-be4c-a706c06f48e5.png)
