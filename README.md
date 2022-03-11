@@ -1,4 +1,4 @@
-•Wifi Control beta 0.2 is a eassy way to 
+# Wifi Control beta 0.2 is a eassy way to 
 
 •Monitor mode
 
@@ -8,7 +8,7 @@
 
 •Handshake   
 
-•to install the tool 
+# Installation 
 
 ```
 git clone https://github.com/moemenkali/Wifi-Control.git
