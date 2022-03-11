@@ -1,12 +1,14 @@
-# Wifi Control beta 0.2 is a eassy way to 
+# Wifi Control beta 0.2
 
-•Monitor mode
+•Monitor-mode
 
-•Managed mode
+•Managed-mode
 
-•Mac channger   
+•Mac-channger   
 
 •Handshake   
+
+•Wps-Cracking
 
 # Installation 
 ```
