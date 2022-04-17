@@ -1,4 +1,4 @@
-# Wifi Control beta 0.2
+# Wifi Control beta 0.1
 
 •Monitor-mode
 
